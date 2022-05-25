@@ -4,61 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Department of Tourism</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./assets/gon.png" type="image/x-icon">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
-    
-    
+<body id="app">
     <div id="header_section">
         <div id="top_header" class="">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
-                        <ul class="float-left d-none d-sm-block d-md-block">
+                        <!-- <ul class="float-left d-none d-sm-block d-md-block">
                             <li class=""> 'Site Map' </li>
                             <li class=""> 'Contacts/ Inquieries'</li>
                             <li class=""> 'Hotels'</li>
                             <li class=""> 'FAQs'</li>
-                        </ul>
+                        </ul> -->
                     </div>
-                    <div class="col-md-4">
-                        <ul class="float-left">
-                            <li class="">रिपोर्ट</li>
-                            <li class="">भाषा</li>
-                        </ul>
+                    <div class="col-md-12 text-end my-2">
+                      <a class="btn btn-sm btn-danger text-white" href="https://ticdss.pas.com.np/"> System Login</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="main_header">
-        <div class="container">
+        <div class="container-fluid" style="background-image: url('./assets/mountain.jpg'); background-size: cover; background-repeat: no-repeat;">
             <div class="row py-2">
-                <div class="col-md-2 ">
-                    <div class="logo-container-left">
-                        <img src="./assets/gon.png" class="img-fluid" alt="Nepal GOV">
-                    </div>
-                </div>
-                <div class="col-md-8 office_name_container">
-                    <div class="text-center">
-                        <h3>Tourist Helpline </h3>
-                        <h2>Government of Nepal</h2>
-                        <h4>Ministry of Tourism Culture and Aviation </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="logo-container-right">
-                        <div class="">
-                            <!-- <img src="visit-nepal.png')}}" class="img-fluid" alt="पर्यटन वर्ष २०२०"> -->
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="logo-container-left">
+                                <img src="./assets/gon.png" class="img-fluid" alt="Nepal GOV" width="150">
+                            </div>
                         </div>
+                        <div class="col-md-9 text-start">
+                                <h4 class="text-danger">Government of Nepal</h4>
+                                <h4 class="text-primary">Ministry of Tourism Culture and Civil Aviation </h4>
+                                <h5>Department of Tourism</h5>
+                        </div>
+
                     </div>
                 </div>
+                
+               
+                <div class="col-md-4 text-start">
+                    <div class="text-center" style="color:#90261f;">
+                        <h3>Multilingual Helpline System</h3>
+                    </div>
+                    <div class="text-center" style="color:#90261f;">
+                        <h3>(MHS)</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 text-end">
+                    <img src="./assets/nepal-flag.gif" style="height: 9em" class="img-fluid" alt="Nepal GOV"> 
+                </div>
+               
             </div>
         </div>
     </div>
-    <div id="navigation_section">
+    <!-- <div id="navigation_section">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="slide-collapse"
@@ -133,65 +142,62 @@
             </div>
         </nav>
         <div class="menu-overlay"></div>
-    </div>
+    </div> -->
 
     
 
 
     <div id="body_section">
-        <div class="container">
+        <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 py-4">
                         <div class="parallax-container parallax-container-1">
                             <h3 class="title_color pb-3 text-white">
-                                Helpline Numbers: 9803640949
+                                Toll Free No. : 16600121452 (Note: Only for NTC)
+                                </h3>
+                                <h3 class="title_color pb-3 text-white">
+                                Director No. : 01-4221452
                             </h3>
                             <h6 class="title_color text-white">
                                Extensions:
                             </h6>
                             <div class="content introduction-links">
                                 <a href="#" class="text-center">
-                                    <div class="">English</div>
-                                    1001
-                                </a>
-                                <a href="#">
                                     <div class="">Nepali</div>
-                                    1001
+                                    0
                                 </a>
                                 <a href="#" class="text-center">
-                                    <div class="">Japanese</div>
-                                    1001
-                                </a>
-                                <a href="#">
-                                    <div class="">Chinese</div>
-                                    1001
+                                    <div class="">Hindi</div>
+                                    1   
                                 </a>
                                 <a href="#" class="text-center">
                                     <div class="">English</div>
-                                    1001
+                                    2
                                 </a>
-                                <a href="#">
-                                    <div class="">Nepali</div>
-                                    1001
+                                <a href="#" class="text-center">
+                                    <div class="">Chinese</div>
+                                    3
+                                </a>
+                                <a href="#" class="text-center" >
+                                    <div class="">Korean</div>
+                                    4
                                 </a>
                                 <a href="#" class="text-center">
                                     <div class="">Japanese</div>
-                                    1001
+                                    5
                                 </a>
-                                <a href="#">
-                                    <div class="">Chinese</div>
-                                    1001
-                                </a>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 content-introduction py-4">
+                        <h4>About Us</h4>
                         <div class="content-introduction">
-                            The Ministry of Tourism, Government of India has introduced a 24×7 Toll Free Multi-Lingual Tourist Help Line to facilitate visits of tourists to India. The Free Multi-Lingual Help Line is launched in 12 International languages namely,
-                            <strong> Arabic, French, German, Italian, Japanese, Korean, Chinese, Portuguese, Russian and Spanish.</strong>
-                            The service is available on toll free number <strong>1800111363</strong> or on a short code 1363 offering a “multi-lingual helpdesk”.
-                             It will provide information relating to travel and tourism in India to the domestic and international tourists.
-                            The helpline will also advise callers during the times of distress, if any, while travelling in India and alerts the concerned authorities, if required
+                            Multilingual Tourist Helpline Support Center is an initiative led by the Department of Tourism, Nepal to further enhance and streamline tourism in Nepal. Our Support Center offers Multilingual Helpline service dedicated to make your stay in Nepal hassle-free. 
+                            Think about traveling in a foreign land; whether that be for business or pleasure; you desperately need help and you don’t get it properly just because of the language barrier. You don’t speak the local dialect and they don’t understand your language. It can be frustrating at least and could be life endangering at worse. 
+                            Imagine yourself in a difficult situation and the help can’t reach you just because the both of you don’t speak the same language. So, in order to mitigate such problems and to make your travel convenient, we are operating a support center where the operators speak your native tongue and assist you with your enquiries. Whether you need help in a troubled situation or you just want to find a place near you to grab some decent dinner and relax, our operators are always there to assist you.      
+                            We are here to provide answers to your questions and solutions to your problems. Forget about translators, Talk to a real person and get your queries answered in no time, that too; in your own language.  
+                            We welcome you to Nepal.                              
                         </div>
                     </div>
                     <div class="col-md-6 py-4">
@@ -204,7 +210,7 @@
                                         Notice
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" id="nav-news-tab" data-toggle="tab" href="#nav-news"
                                         role="tab"
                                         aria-controls="nav-news" aria-selected="false">
@@ -217,61 +223,14 @@
                                         role="tab"
                                         aria-controls="nav-press" aria-selected="false">
                                         Press Release</a>
-                                </li>
+                                </li> -->
                             </ul>
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-notice" role="tabpanel"
                                         aria-labelledby="nav-notice-tab">
                                     <ul class="list-group">
                                         <li class="list-group-item events">
-                                            <div class="event_date">
-                                                <div class="day">15</div>
-                                                <div class="month">Poush</div>
-                                                <div class="year">2020</div>
-                                            </div>
-                                            <div class="event_content">
-                                                औषधि खरिद सम्बन्धि शिलबन्दी दरभाउपत्र आहवान
-                                                सूचनाऔषधि खरिद सम्बन्धि शिलबन्दी दरभाउपत्र आहवान सूचना
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item events">
-                                            <div class="event_date">
-                                                <div class="day">15</div>
-                                                <div class="month">Poush</div>
-                                                <div class="year">2020</div>
-                                            </div>
-                                            <div class="event_content">
-                                                औषधि खरिद सम्बन्धि शिलबन्दी दरभाउपत्र आहवान
-                                                सूचना
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item events">
-                                            <div class="event_date">
-                                                <div class="day">15</div>
-                                                <div class="month">Poush</div>
-                                                <div class="year">2020</div>
-                                            </div>
-                                            <div class="event_content">
-                                                औषधि खरिद सम्बन्धि शिलबन्दी दरभाउपत्र आहवान
-                                                सूचना
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item events">
-                                            <div class="event_date">
-                                                <div class="day">15</div>
-                                                <div class="month">Poush</div>
-                                                <div class="year">2020</div>
-                                            </div>
-                                            <div class="event_content">
-                                                औषधि खरिद सम्बन्धि शिलबन्दी दरभाउपत्र आहवान
-                                                सूचना
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item events">
-                                            <div class="event_content">
-                                                <a href="#" class=" btn btn-sm custom-btn-primary"> सबै समाचार
-                                                    हेर्नुहोस</a>
-                                            </div>
+                                           
                                         </li>
                                     </ul>
                                 </div>
@@ -373,7 +332,7 @@
                     </div>
                        
                         
-                        <div class="col-md-12 dynamic-content-links py-4 text-white">
+                        <!-- <div class="col-md-12 dynamic-content-links py-4 text-white">
                            <div class="parallax-container parallax-container-2">
                             <h3 class="title_color pb-3">
                                 Most Asked Questions
@@ -421,8 +380,8 @@
                                 </div>
                               </div>
                            </div>
-                        </div>
-                        <div class="col-md-12 dynamic-home-links py-4">
+                        </div> -->
+                        <!-- <div class="col-md-12 dynamic-home-links py-4">
                             <h3 class="title_color pb-3">
                                 Important Links
                             </h3>
@@ -436,7 +395,7 @@
                                 <a href="#"> Electronic Transactions</a>
                                 <a href="#"> Visit Nepal </a>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- <div class="col-md-6 py-4 px-1">
                             <a class="twitter-timeline" data-width="100%" data-height="500"
@@ -446,19 +405,20 @@
                 </div>
         </div>
         <!-- map and contact section starts-->
-        <div class="container" id="mapAndContact">
+        <div class="container-fluid" id="mapAndContact">
             <div class="row ">
-                <div id="map_section" class="col-lg-7 py-5">
-                    <h3 class="title_color">कार्यालय सम्म पुग्नुहोस</h3>
+                <div id="map_section" class="col-7 mt-5">
+                    <h3 class="title_color"> Map</h3>
                     <div class="google-maps">
                         <iframe
+                            style="height: 32em !important; width: 100%;"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47987.57718270496!2d85.94349504531235!3d26.62612486275667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa58c013ce9f57541!2sNagarain+Municipality+Office!5e0!3m2!1sen!2snp!4v1543381920791"
-                            width="600" height="" frameborder="0" style="border:0;" allowfullscreen="">
+                            frameborder="0"  allowfullscreen="">
 
                         </iframe>
                     </div>
                 </div>
-                <div id="contact_section" class="col-lg-5 py-5">
+                <div id="contact_section" class="col-5 py-5">
                     <h3 class="title_color">
                         सन्देश पठाउनुहोस
                     </h3>
@@ -485,51 +445,49 @@
 
     <!-- footer section starts -->
     <div id="footer_section">
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-around">
             <div class="col-md-4 text-center py-5">
-                    <h5 class="title-color text-white">Tourist Help Desk</h5>
+                    <h5 class="title-color text-white">Contact Details</h5>
                     <hr>
                     <ul class="list-group ">
-                        <li class="list-group-item">Department of Tourism</li>
-                        <li class="list-group-item">(नेपाल)</li>
-                        <li class="list-group-item">+977-1-4780076, +977-1-4786489</li>
-                        <li class="list-group-item"> dot@gmail.com</li>
+                        <li class="list-group-item"> Bhrikuti Mandap, Kathmandu</li>
+                        <li class="list-group-item">Nepal</li>
+                        <li class="list-group-item">Tel No.:  977-1-4221452	</li>
+                        <li class="list-group-item"> Email: touristhelplinecenter@gmail.com</li>
+                        <li class="list-group-item">WhatsApp: 9808726999</li>
                         <li class="list-group-item">
-                            <a href="#"><span class="fa-stack fa-2x">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                          <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            <a href="https://www.youtube.com/channel/UC8qlNPESrkRv7MxZkc4tVJw"><span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-2x text-danger"></i>
+                                          <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
                                         </span>
-                                    </a>
-                                    <a href="#"><span class="fa-stack fa-2x">
+                            </a>
+                                    <a href="https://twitter.com/dotcallcenter"><span class="fa-stack fa-2x text-info">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
-                                <a href="#"><span class="fa-stack fa-2x">
+                                <a href="https://www.facebook.com/Tourist-Multilingual-Helpline-Center-102048739154515/"><span class="fa-stack fa-2x" style="color: #0887EF;">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
-                            <a href="#"><span class="fa-stack fa-2x">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-google-plus-g fa-stack-1x fa-inverse"></i>
-                            </span>
+                           
                         </a>
                     </li>
+                      
                 </ul>
             </div>
             <div class="col-md-4 text-center py-5">
-                <h5 class="title-color text-white">Reports</h5>
+                <h5 class="title-color text-white">Supports</h5>
                 <hr>
                 <ul class="list-group">
-                    <li class="list-group-item"><a href="#">वार्षिक प्रगति प्रतिवेदन</a></li>
-                    <li class="list-group-item"><a href="#"> चौमासिक प्रगति प्रतिवेदन</a></li>
-                    <li class="list-group-item"><a href="#">सार्वजनिक सुनुवाई</a></li>
-                    <li class="list-group-item"><a href="#">सार्वजनिक परीक्षण</a></li>
+                    <li class="list-group-item"> Department of Tourism (DOT)</li>
+                        <li class="list-group-item">Nepal</li>
+                        <li class="list-group-item">Mob No.:  9840141113	</li>
                 </ul>
             </div>
-            <div class="col-md-4  text-center py-5">
+            <!-- <div class="col-md-4  text-center py-5">
                 <h5 class="title-color text-white"> Important Links </h5>
                 <hr>
                 <ul class="list-group">
@@ -539,11 +497,11 @@
                     <li class="list-group-item"><a href="#">Passport Renew</a></li>
                     <li class="list-group-item"><a href="#">Electronic Transactions</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="container pt-4 pb-1">
-        <h6 class="text-center ">Copyright © 2022 . All Rights Reserved. Ministry of Tourism.</h6>
+        <h6 class="text-center text-white">Copyright © 2022 . All Rights Reserved. Ministry of Tourism.</h6>
     </div>
 </div>
 <!-- footer section ends -->
@@ -552,5 +510,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script src="./index.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

@@ -230,7 +230,7 @@
   #body_section .introduction-links, #body_section .dynamic-content-links .important-links, #body_section .dynamic-home-links .important-links {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
   #body_section .introduction-links a, #body_section .dynamic-content-links .important-links a, #body_section .dynamic-home-links .important-links a {
     padding: 2rem;
@@ -329,7 +329,7 @@
     top: 0;
     left: 0;
     width: 100% !important;
-    height: 100% !important;
+    height: 50% !important;
   }
   
   #footer_section .list-group .list-group-item {
